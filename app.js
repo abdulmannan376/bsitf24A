@@ -7,6 +7,8 @@ const server = http.createServer((req, res) => {
     res.end("About Page updated");
   } else if (req.url === "/contact") {
     res.end("Contact Page");
+  }else if (req.url === "/profile") {
+    res.end("Profile Page");
   }else {
     res.statusCode = 404;
     res.end("Page Not Found");
